@@ -83,8 +83,8 @@ void GerarOndaSenoidal(float offSet, float fase, unsigned long amplitude, float 
         saidaFase = atan(Img / Real);
     }
     magnitude = sqrt(Real * Real + Img * Img);
-    magnitude += offSet;
-    magnitude *= amplitude;
+    Real += offSet;
+    Real *= amplitude;
     //Serial.println(saidaFase);
     //Serial.println(Real);
 }
